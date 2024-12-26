@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>SolarLite - Éclairez votre vie, naturellement !</title>
+</head>
+<body>
+    <header>
+        <div class="logo">SolarLite</div>
+        <nav>
+            <ul>
+                <li><a href="#hero">Accueil</a></li>
+                <li><a href="#features">À propos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero" class="fade-in">
+        <div class="hero-content">
+            <img src="image/lampe.png" alt="Lampe solaire" class="hero-image">
+            <h1>Éclairez votre vie, naturellement !</h1>
+            <p>SolarLite est une lampe solaire portable, idéale pour les voyages et les zones sans électricité. Rechargeable au soleil, elle est compacte, durable et respectueuse de l'environnement.</p>
+            <button onclick="scrollToFeatures()">En savoir plus</button>
+        </div>
+    </section>
+
+    <section id="features" class="fade-in">
+        <h2>Pourquoi choisir SolarLite ?</h2>
+        <ul class="features-list">
+            <li><img src="image/lampe 1.jpeg" alt="Rechargeable grâce au soleil"> Rechargeable grâce au soleil.</li>
+            <li><img src="image/lampe 4.png" alt="Compacte et facile à transporter"> Compacte et facile à transporter.</li>
+            <li><img src="image/battérie.png" alt="Durée de vie prolongée"> Durée de vie prolongée avec une batterie intégrée.</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="fade-in">
+        <h2>Restez informé !</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Nom" required />
+            <input type="email" placeholder="E-mail" required />
+            <button type="submit">Soumettre</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 SolarLite. Tous droits réservés.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>

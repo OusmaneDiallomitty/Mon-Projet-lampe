@@ -1,0 +1,154 @@
+/* Styles globaux */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* En-tête */
+header {
+    background-color: #ffcc00; /* Jaune */
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between; /* Espace entre le logo et la navigation */
+    align-items: center; /* Centre verticalement le contenu */
+}
+
+.logo {
+    font-size: 24px; /* Taille du texte du logo */
+    font-weight: bold; /* Met le texte en gras */
+    color: #333; /* Couleur du texte */
+}
+
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333; /* Couleur du texte */
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #ff9900; /* Jaune foncé au survol */
+    color: white; /* Texte blanc au survol */
+}
+
+/* Section Héro */
+#hero {
+    text-align: center;
+    background-image: url('image/hero-background.jpg'); /* Image d'arrière-plan */
+    background-size: cover; /* Couvre toute la section */
+    background-position: center; /* Centre l'image d'arrière-plan */
+    padding: 100px 20px; /* Espacement autour du contenu */
+    color: rgb(3, 3, 3); /* Couleur du texte */
+}
+
+.hero-content {
+   max-width: 800px; /* Limite la largeur du contenu héro */
+   margin: auto; /* Centre le contenu */
+}
+
+.hero-image {
+    width: 80%; /* Largeur de l'image principale */
+    max-width: 600px; /* Limite la largeur maximale */
+}
+
+#hero h1 {
+    font-size: 2.5em; /* Taille de la police du titre */
+}
+
+#hero p {
+    font-size: 1.2em; /* Taille de la description */
+}
+
+#hero button {
+    background-color: #ff9900; /* Jaune foncé */
+    border: none;
+    padding: 15px 30px;
+}
+
+#hero button:hover {
+    background-color: #cc7a00; /* Couleur plus foncée au survol */
+}
+
+/* Animation d'apparition */
+.fade-in {
+   opacity: 0;
+   transform: translateY(20px);
+   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.fade-in.visible {
+   opacity: 1;
+   transform: translateY(0);
+}
+
+/* Section Fonctionnalités */
+#features {
+   background-color: #e6ffe6; /* Vert clair */
+   padding: 40px 20px; /* Espacement autour du contenu */
+   text-align: center; /* Centre le texte dans toute la section */
+}
+
+.features-list {
+   list-style-type: none;
+   display: flex;
+   justify-content: space-around; 
+   flex-wrap: wrap; 
+}
+
+.features-list li {
+   display: flex;
+   flex-direction: column; /* Aligne les images et descriptions verticalement dans chaque élément */
+   align-items: center; /* Centre horizontalement chaque élément dans la liste */
+   margin-bottom: 20px; /* Espacement entre les lignes */
+}
+
+#features img {
+   width: 250px; /* Ajustez cette valeur pour agrandir les images selon vos besoins (ex : à 100 pixels de large) */
+   height: auto; /* Conserve le ratio de l'image */
+   margin-bottom: 10px; /* Espacement entre l'image et la description */
+}
+
+/* Section Contact */
+#contact {
+   padding: 40px 20px;
+   text-align: center;
+}
+
+form input {
+   display: block;
+   margin-bottom: 15px;
+   padding: 10px;
+   width: calc(100% - 20px); 
+   max-width: 400px; 
+   border-radius: 5px; 
+   border: 1px solid #ccc; 
+}
+
+button[type='submit'] {
+   background-color: #ffcc00; 
+   border-radius: 5px; 
+   border:none; 
+   padding: 10px 20px; 
+}
+
+button[type='submit']:hover {
+   background-color:#ff9900; 
+}
+
+/* Footer */
+footer {
+   text-align:center; 
+   padding:20px; 
+   background-color:#333; 
+   color:white; 
+}
